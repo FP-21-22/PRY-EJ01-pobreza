@@ -1,19 +1,24 @@
-# Proyecto del Primer Cuatrimestre Fundamentos de Programación (Curso  &lt;XX&gt;/&lt;YY&gt;)
-Autor/a: &lt;nombre del autor&gt;   uvus:&lt;uvus del autor&gt;
+# Proyecto del Primer Cuatrimestre Fundamentos de Programación (Curso  &lt;20&gt;/&lt;21&gt;)
+Autor/a: Jairo Escánez García;   uvus:&lt;uvus del autor&gt;
 
-Aquí debes añadir la descripción del dataset y un enunciado del dominio del proyecto.
+Revisión, reestructuración y adaptación para FP: Toñi Reina
+
+Este es un ejemplo de proyecto realizado por un estudiante en el curso 2020/21. El código del estudiante se ha corregido, reestructurado y adaptado.
+
+
+El proyecto tiene como objetivo analizar los datos de pobreza publicados en el dataset de Kaggle que se puede descargar de la siguiente URL (https://www.kaggle.com/johnnyyiu/predicting-poverty). El dataset original tiene 59 columnas, ninguna de las cuales es de tipo fecha. Así que, por una parte, se ha recortado el número de columnas escogiendo sólo 14 de las 59 columnas, y se ha añadido una columna de tipo fecha, que se ha generado con fechas aleatorias y que representa la fecha en la que se perdió el trabajo.
 
 
 ## Estructura de las carpetas del proyecto
 
 * **/src**: Contiene los diferentes módulos de Python que conforman el proyecto.
-  * **&lt;modulo1.py&gt;**: Describe aquí el módulo principal.
-  * **&lt;modulo1_test.py&gt;**: Describe aquí el módulo de pruebas.
-  * **&lt;modulo2.py&gt;**: Añade descripciones para el resto de módulos que pueda tener tu proyecto. Por ejemplo, sería conveniente tener un módulo separado con funciones genéricas para dibujar gráficas y/o otro con funciones genéricas de conversión de tipos. 
+  * **&lt;poverty.py&gt;**: Contiene funciones para explotar los datos sobre pobreza.
+  * **&lt;poverty_test.py&gt;**: Contiene funciones de test para probar las funciones del módulo `poverty.py`. En este módulo está el main
+  * **&lt;parsers.py&gt;**: Contiene funciones de parseo de datos.
+  * **&lt;graficas.py&gt;**: Contiene funciones para dibujar gráficas 
 * **/data**: Contiene el dataset o datasets del proyecto
-    * **&lt;dataset1.csv&gt;**: Añade una descripción genérica del dataset.
-    * **&lt;dataset2.csv&gt;**: Añade una descripción del resto de datasets que puedas tener.
-    
+    * **&lt;poverty_data.csv&gt;**: Archivo con los datos de pobreza que van a ser explotados.
+        
 ## Estructura del *dataset*
 
 Aquí debes describir la estructura del dataset explicando qué representan los datos que contiene y la descripción de cada una de las columnas.
