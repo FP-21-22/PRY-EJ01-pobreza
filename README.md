@@ -62,7 +62,7 @@ El módulo principal es el módulo poverty.py, así que aquí es donde se hará 
 #### Entrega 1
 
 * **Bloque 0**  
-  * **lee_fichero(fichero)**: lee los datos del fichero csv y devuelve una lista de tuplas de tipo Info con los datos del fichero. Para implementar esta función se han definido las siguientes funciones auxiliares en el [módulo `parsers`](#modulo-parsers):
+  * **lee_fichero(fichero)**: lee los datos del fichero csv y devuelve una lista de tuplas de tipo Info con los datos del fichero. Para implementar esta función se han definido las siguientes funciones auxiliares en el [módulo `parsers`](#módulo-parsers):
     * **parsea_booleano(cadena)**
     * **parsea_genero(cadena)**
     * **parsea_fecha(cadena)**   
@@ -95,11 +95,11 @@ El módulo principal es el módulo poverty.py, así que aquí es donde se hará 
     * **calcula_media_dinero_banco(registros)**: Dada una lista de tuplas de tipo Info, devuelve la media de la cantidad que tienen en el banco las personas cuya información se recoge en la lista de tuplas dada como parámetro. Si no se puede calcular se eleva la excepcion StatisticsError.
     * **agrupa_por_nivel_educacion (registros)**: Es la misma función auxiliar definida para implementar la función obten_media_edad_por_nivel_educacion.
     
-  * **muestra_dinero_banco_por_cada_situacion(registros)**:  Dada una lista de tuplas de tipo Info, muestra un diagrama de barras en el que por cada nivel de educacion se muestra la calcula_media_edad del dinero en el banco. Para implementar esta función se usan las siguientes funciones:
-    *  obten_media_dinero_banco_segun_nivel_educacion(registros): Función ya implementada en el bloque 5.
-    *  dibujar_grafica_barras(X, Y, titulo, etiqueta_eje_x, etiqueta_eje_y): Función definida en el módulo `graficas`.
+  * **muestra_dinero_banco_por_nivel_educacion(registros)**:  Dada una lista de tuplas de tipo Info, muestra un diagrama de barras en el que por cada nivel de educacion se muestra la media del dinero en el banco de las personas que tienen ese nivel de educación. Para implementar esta función se usan las siguientes funciones:
+    *  **obten_media_dinero_banco_segun_nivel_educacion(registros)**: Función ya implementada en el bloque 5.
+    *  **dibujar_grafica_barras(X, Y, titulo, etiqueta_eje_x, etiqueta_eje_y)**: Función definida en el módulo `graficas`.
     
-### &lt;test modulo 1&gt;
+### Módulo poverty_test
 
 * **<test funcion 1>**: Descripción de las pruebas realizadas a la función 1.
 * **<test funcion 2>**: Descripción de las pruebas realizadas a la función 2.
@@ -114,3 +114,6 @@ Este módulo contiene las siguientes funciones de parseo de datos:
 * **parsea_genero(cadena)**:
 * **parsea_fecha(cadena)**:   
  
+### Módulo graficas
+
+Este módulo contiene las siguientes funciones para dibujar gráficas:
