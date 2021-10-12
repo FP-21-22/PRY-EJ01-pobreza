@@ -12,10 +12,10 @@ El proyecto tiene como objetivo analizar los datos de pobreza publicados en el d
 ## Estructura de las carpetas del proyecto
 
 * **/src**: Contiene los diferentes módulos de Python que conforman el proyecto.
-  * **poverty.py**: Contiene funciones para explotar los datos sobre pobreza.
-  * **poverty_test.py**: Contiene funciones de test para probar las funciones del módulo `poverty.py`. En este módulo está el main
-  * **parsers.py**: Contiene funciones de parseo de datos.
-  * **graficas.py**: Contiene funciones para dibujar gráficas 
+    * **poverty.py**: Contiene funciones para explotar los datos sobre pobreza.
+    * **poverty_test.py**: Contiene funciones de test para probar las funciones del módulo `poverty.py`. En este módulo está el main
+    * **parsers.py**: Contiene funciones de parseo de datos.
+    * **graficas.py**: Contiene funciones para dibujar gráficas 
 * **/data**: Contiene el dataset o datasets del proyecto
     * **poverty_data.csv**: Archivo con los datos de pobreza que van a ser explotados.
         
