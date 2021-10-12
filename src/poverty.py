@@ -248,7 +248,7 @@ def muestra_dinero_banco_por_nivel_educacion(registros):
     @type registros: [ Info(int, str, boolean, int, str. boolean, str, str, in, boolean, int, boolean, int, int, datetime.date)]
     '''
     dicc=obten_media_dinero_banco_segun_nivel_educacion(registros)
-    X, Y = zip(*dicc.items())    
+    X, Y = zip(*sorted(dicc.items()))    
     titulo ='Dinero en el banco según cada nivel de estudio'
     etiqueta_eje_x = 'Nivel de estudio'
     etiqueta_eje_y = 'Dinero'
