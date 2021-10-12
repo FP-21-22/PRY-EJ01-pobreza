@@ -1,3 +1,4 @@
+﻿# -*- coding: utf-8 -*-
 from poverty import *
 
 def main():
@@ -5,16 +6,16 @@ def main():
     LISTA_TUPLAS = lee_fichero('../data/poverty_data.csv')
     print('Leídos', len(LISTA_TUPLAS),'registros.')
     print('Los tres primeros registros son:',LISTA_TUPLAS[:3])
-    print('Los tres �ltimos registros son:',LISTA_TUPLAS[-3:])
+    print('Los tres últimos registros son:',LISTA_TUPLAS[-3:])
     
     filtro1=selecciona_registros_de_genero_y_pais(LISTA_TUPLAS,'Hombre')
-    print('Filtrar por genero para genero=hombre y pa�s=A:\n',filtro1[:3])
+    print('Filtrar por genero para genero=hombre y país=A:\n',filtro1[:3])
     filtro2=selecciona_registros_de_genero_y_pais(LISTA_TUPLAS,pais='C',genero='Mujer')
-    print('Filtrar por genero para genero=hombre y pa�s=C:\n',filtro2[:3])
+    print('Filtrar por genero para genero=hombre y país=C:\n',filtro2[:3])
     
     
-    print('La informacion de la/s persona/s que poseen m�s dinero en el banco es:',obten_registros_mas_dinero_banco(LISTA_TUPLAS))
-    print('La tupla de la mujer del pa�s C que tiene m�s dinero es:',obten_registros_mas_dinero_banco(filtro2))
+    print('La informacion de la/s persona/s que poseen más dinero en el banco es:',obten_registros_mas_dinero_banco(LISTA_TUPLAS))
+    print('La tupla de la mujer del país C que tiene más dinero es:',obten_registros_mas_dinero_banco(filtro2))
    
     
 
@@ -22,9 +23,9 @@ def main():
     a = cuenta_endeudados(LISTA_TUPLAS,'Hombre')
     print('El número de hombres endeudados es:',a)
     a = cuenta_endeudados(LISTA_TUPLAS)
-    print('El número de hombres endeudados es:',a)
+    print('El nÃºmero de hombres endeudados es:',a)
     a = cuenta_endeudados(LISTA_TUPLAS,'Mujer')
-    print('El número de mujeres endeudadas es:',a)
+    print('El nÃºmero de mujeres endeudadas es:',a)
     
     a = obten_n_registros_menor_num_moviles(LISTA_TUPLAS,'Hombre',n=5)
     print('La informacion de los 5 hombres que tengan menos móviles y que se hayan endeudado:',a)
@@ -47,8 +48,8 @@ def main():
 
     
 
-    print('Diccionario en el que las claves son la situación familiar de las personas de 19 años y los valores son el número total de las veces que se han endeudado\n',calcula_total_veces_endeudados_por_situacion_familiar(LISTA_TUPLAS,19))
-    print('Diccionario en el que las claves son la situación familiar de los 500 primeros hombres de 25 años  que tienen menos móviles y los valores son el número total de las veces que se han endeudado\n',calcula_total_veces_endeudados_por_situacion_familiar(obten_n_registros_menor_num_moviles(LISTA_TUPLAS,'Hombre',n=500),25))
+    print('Diccionario en el que las claves son la situación familiar de las personas de 19 aÃ±os y los valores son el nÃºmero total de las veces que se han endeudado\n',calcula_total_veces_endeudados_por_situacion_familiar(LISTA_TUPLAS,19))
+    print('Diccionario en el que las claves son la situación familiar de los 500 primeros hombres de 25 aÃ±os  que tienen menos móviles y los valores son el nÃºmero total de las veces que se han endeudado\n',calcula_total_veces_endeudados_por_situacion_familiar(obten_n_registros_menor_num_moviles(LISTA_TUPLAS,'Hombre',n=500),25))
 
 
 
