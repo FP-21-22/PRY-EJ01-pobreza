@@ -84,7 +84,7 @@ El módulo principal es el módulo poverty.py, así que aquí es donde se hará 
 * **Bloque 4**
 
   * **obten_n_registros_menor_num_moviles(registros,genero='Hombre',n=3)**: Dadas una lista de tuplas de tipo Info, un género y un pais, devuelve una lista de tuplas de tipo Info con los datos de las n personas endeudadas con menor número de móviles.
-  * **calcula_total_veces_endeudados_por_situacion_familiar(lista,edad)**: Dadas una lista de tuplas de tipo Info y una edad, devuelve un diccionario en el que las claves representan una situación familiar, y los valores son el total de veces que se han endeudado las personas con la edad dada como parámetro que están en la situación familiar representada por la clave.
+  * **calcula_total_veces_endeudados_por_situacion_familiar(registros,edad)**: Dadas una lista de tuplas de tipo Info y una edad, devuelve un diccionario en el que las claves representan una situación familiar, y los valores son el total de veces que se han endeudado las personas con la edad dada como parámetro que están en la situación familiar representada por la clave.
 
 * **Bloque 5**
   * **obten_media_edad_por_nivel_educacion(registros)**: Dada una lista de tuplas de tipo Info, devuelve un diccionario en el que las claves representan el nivel de educacion y los valores la media de edad de las personas que tienen ese nivel de educación. Para implementar esta función se han definido las dos siguientes funciones auxiliares:
