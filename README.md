@@ -63,9 +63,9 @@ El módulo principal es el módulo poverty.py, así que aquí es donde se hará 
 
 * **Bloque 0**  
   * **lee_fichero(fichero)**: lee los datos del fichero csv y devuelve una lista de tuplas de tipo Info con los datos del fichero. Para implementar esta función se han definido las siguientes funciones auxiliares en el [módulo `parsers`](#módulo-parsers):
-    * **parsea_booleano(cadena)**
-    * **parsea_genero(cadena)**
-    * **parsea_fecha(cadena)**   
+    * **parsea_booleano(cadena)**: Función para convertir de cadena a booleano.
+    * **parsea_genero(cadena)**: Función para convertir de cadena (con valores True o False) a género.
+    * **parsea_fecha(cadena)**: Función para convertir de cadena a fecha.   
  
  #### Entrega 2
 
@@ -97,7 +97,7 @@ El módulo principal es el módulo poverty.py, así que aquí es donde se hará 
     
   * **muestra_dinero_banco_por_nivel_educacion(registros)**:  Dada una lista de tuplas de tipo Info, muestra un diagrama de barras en el que por cada nivel de educacion se muestra la media del dinero en el banco de las personas que tienen ese nivel de educación. Para implementar esta función se usan las siguientes funciones:
     *  **obten_media_dinero_banco_segun_nivel_educacion(registros)**: Función ya implementada en el bloque 5.
-    *  **dibujar_grafica_barras(X, Y, titulo, etiqueta_eje_x, etiqueta_eje_y)**: Función definida en el módulo `graficas`.
+    *  **dibujar_grafica_barras(X, Y, titulo, etiqueta_eje_x, etiqueta_eje_y)**: Función definida en el [módulo `graficas`](#módulo-graficas).
     
 ### Módulo poverty_test
 
@@ -117,4 +117,7 @@ Este módulo contiene las siguientes funciones de parseo de datos:
 ### Módulo graficas
 
 Este módulo contiene las siguientes funciones para dibujar gráficas:
-* **dibujar_grafica_barras(etiquetas, valores, titulo, etiqueta_eje_x=None,etiqueta_eje_y=None)**: Dados una lista de cadenas con las etiquetas que se dibujarán en el eje X de la gráfica, una lista de enteros o reales con la altura de cada una de las barras, una cadena que representa el título del gráfico, y, opcionalmente, una cadena para etiquetar el eje X y/o otra cadena para etiquetar el eje Y, dibuja una gráfica de barras con esos datos. 
+* **dibujar_grafica_barras(etiquetas, valores, titulo, etiqueta_eje_x=None,etiqueta_eje_y=None)**: Dados una lista de cadenas con las etiquetas que se dibujarán en el eje X de la gráfica, una lista de enteros o reales con la altura de cada una de las barras, una cadena que representa el título del gráfico, y, opcionalmente, una cadena para etiquetar el eje X y/o otra cadena para etiquetar el eje Y, dibuja una gráfica de barras con esos datos. Un ejemplo del tipo de gráfica generado es el siguiente:
+
+![image](https://user-images.githubusercontent.com/72299672/136938900-27e41abf-7527-4bf4-a63f-01b11373269a.png)
+
