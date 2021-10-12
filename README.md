@@ -55,14 +55,50 @@ Las decisiones de diseño más destacadas de este tipo son:
 * El campo genero es de tipo str, en lugar de boolean como aparece en el dataset original, y puede tomar los valores 'Hombre' o 'Mujer'.
 
 ## Funciones implementadas
-Añade aquí descripciones genéricas de las funciones, que luego debes acompañar con comentarios de tipo documentación en el código
+En este proyecto se han implementado las siguientes funciones, que están clasificadas según los bloques y tipos de funciones que se requieren en cada una de las entregas.
+El módulo principal es el módulo poverty.py, así que aquí es donde se hará referencia a cada uno de los bloques de las entregas.
+### Módulo poverty
 
-### &lt;modulo 1&gt;
+#### Entrega 1
 
-* **<funcion 1>**: Descripción de la función 1.
-* **<funcion 2>**: Descripción de la función 2.
-* ...
+* **Bloque 0**  
+  * **lee_fichero(fichero)**: lee los datos del fichero csv y devuelve una lista de tuplas de tipo Info con los datos del fichero. Para implementar esta función se han definido las siguientes funciones auxiliares en el [módulo `parsers`](#modulo-parsers):
+    * **parsea_booleano(cadena)**
+    * **parsea_genero(cadena)**
+    * **parsea_fecha(cadena)**   
+ 
+ #### Entrega 2
 
+ * **Bloque 1**
+   * **selecciona_registros_de_genero_y_pais(registros,genero='Hombre',pais='A')**: Dadas una lista de tuplas de tipo Info, un género y un pais, devuelve una lista de tuplas de tipo Info con los datos de las personas del género y pais dados como parámetros.
+
+ * **Bloque 2**
+   * **cuenta_endeudados(registros,genero='Hombre')**: Dadas una lista de tuplas de tipo Info y un género, devuelve el número de personas del género dado como argumento que se han endeudado.
+   * **calcula_porcentaje_endeudados(registros,genero='Hombre')**: Dadas una lista de tuplas de tipo Info y un género, devuelve el porcentaje de personas endeudadas del género dado como parámetro con respecto al total de personas de ese género. Si el porcentaje no se puede calcular, devuelve None.
+
+* **Bloque 3**
+  * **obten_registros_mas_dinero_banco(registros)**: Dada una lista de tuplas de tipo Info, devuelve una lista de tuplas de tipo Info con la información de las personas que tienen más dinero en el banco.
+
+#### Entrega 3
+
+* **Bloque 4**
+
+  * **obten_n_registros_menor_num_moviles(registros,genero='Hombre',n=3)**: Dadas una lista de tuplas de tipo Info, un género y un pais, devuelve una lista de tuplas de tipo Info con los datos de las n personas endeudadas con menor número de móviles.
+  * **calcula_total_veces_endeudados_por_situacion_familiar(lista,edad)**: Dadas una lista de tuplas de tipo Info y una edad, devuelve un diccionario en el que las claves representan una situación familiar, y los valores son el total de veces que se han endeudado las personas con la edad dada como parámetro que están en la situación familiar representada por la clave.
+
+* **Bloque 5**
+  * **obten_media_edad_por_nivel_educacion(registros)**: Dada una lista de tuplas de tipo Info, devuelve un diccionario en el que las claves representan el nivel de educacion y los valores la media de edad de las personas que tienen ese nivel de educación. Para implementar esta función se han definido las dos siguientes funciones auxiliares:
+    * **calcula_media_edad(registros)**:  Dada una lista de tuplas de tipo Info, devuelve la media de edad de las personas cuya información se recoge en la lista de tuplas dada como parámetro. Si no se puede calcular eleva la excepcion StatisticsError.
+    * **agrupa_por_nivel_educacion (registros)**: Dada una lista de tuplas de tipo Info, devuelve un diccionario en el que las claves representan el nivel de educación, y los valores son listas de los registros que tienen ese nivel de educación.
+
+  * **obten_media_dinero_banco_segun_nivel_educacion(registros)**: Dada una lista de tuplas de tipo Info, devuelve un diccionario en el que las claves representan el nivel de educación, y el valor es la media de dinero que tienen en el banco las personas de ese nivel de educación. Para implementar esta función se han definido las siguientes funciones auxiliares:
+    * **calcula_media_dinero_banco(registros)**: Dada una lista de tuplas de tipo Info, devuelve la media de la cantidad que tienen en el banco las personas cuya información se recoge en la lista de tuplas dada como parámetro. Si no se puede calcular se eleva la excepcion StatisticsError.
+    * **agrupa_por_nivel_educacion (registros)**: Es la misma función auxiliar definida para implementar la función obten_media_edad_por_nivel_educacion.
+    
+  * **muestra_dinero_banco_por_cada_situacion(registros)**:  Dada una lista de tuplas de tipo Info, muestra un diagrama de barras en el que por cada nivel de educacion se muestra la calcula_media_edad del dinero en el banco. Para implementar esta función se usan las siguientes funciones:
+    *  obten_media_dinero_banco_segun_nivel_educacion(registros): Función ya implementada en el bloque 5.
+    *  dibujar_grafica_barras(X, Y, titulo, etiqueta_eje_x, etiqueta_eje_y): Función definida en el módulo `graficas`.
+    
 ### &lt;test modulo 1&gt;
 
 * **<test funcion 1>**: Descripción de las pruebas realizadas a la función 1.
@@ -70,8 +106,11 @@ Añade aquí descripciones genéricas de las funciones, que luego debes acompañ
 * ...
 * 
 
-### &lt;modulo 2&gt;
+### Módulo parsers
 
-* **&lt;funcion 1&gt;**: Descripción de la función 1.
-* **&lt;funcion 2&gt;**: Descripción de la función 2.
-* ...
+Este módulo contiene las siguientes funciones de parseo de datos:
+
+* **parsea_booleano(cadena)**: 
+* **parsea_genero(cadena)**:
+* **parsea_fecha(cadena)**:   
+ 
