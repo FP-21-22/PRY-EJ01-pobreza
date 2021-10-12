@@ -112,7 +112,7 @@ Este módulo contiene las siguientes funciones de parseo de datos:
 
 * **parsea_booleano(cadena)**: Dada una cadena, devuelve `True` si la cadena contiene el literal 'verdadero' (independientemente de si está escrtio en mayúsculas o minúsculas); devuelve `False`, si contiene el literal 'falso'; y en cualquier otro caso devuelve `None`.
 * **parsea_genero(cadena)**: Dada una cadena, devuelve 'Mujer'  si la cadena contiene el literal 'verdadero' (independientemente de si está escrtio en mayúsculas o minúsculas);  devuelve 'Hombre' si la cadena contiente el literal 'falso'; y en cualquier otra caso, devuelve None.
-* **parsea_fecha(cadena)**: Dada una cadena una fecha en formato dia/mes/año (\%d/\%m/\%Y), Un objeto de tipo date con la fecha a la que se refiere la cadena de entrada.   
+* **parsea_fecha(cadena)**: Dada una cadena una fecha en formato dia/mes/año (\%d/\%m/\%Y), devuelve un objeto de tipo date con la fecha a la que se refiere la cadena de entrada.   
  
 ### Módulo graficas
 
