@@ -119,5 +119,6 @@ Este módulo contiene las siguientes funciones de parseo de datos:
 Este módulo contiene las siguientes funciones para dibujar gráficas:
 * **dibujar_grafica_barras(etiquetas, valores, titulo, etiqueta_eje_x=None,etiqueta_eje_y=None)**: Dados una lista de cadenas con las etiquetas que se dibujarán en el eje X de la gráfica, una lista de enteros o reales con la altura de cada una de las barras, una cadena que representa el título del gráfico, y, opcionalmente, una cadena para etiquetar el eje X y/o otra cadena para etiquetar el eje Y, dibuja una gráfica de barras con esos datos. Un ejemplo del tipo de gráfica generado es el siguiente:
 
-![image](https://user-images.githubusercontent.com/72299672/136938900-27e41abf-7527-4bf4-a63f-01b11373269a.png)
+![image](https://user-images.githubusercontent.com/72299672/136940053-229cf29e-b7fb-4af8-b0d0-180070ba03fb.png)
+
 
