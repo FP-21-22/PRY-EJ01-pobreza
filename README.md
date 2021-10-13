@@ -100,11 +100,21 @@ El módulo principal es el módulo poverty.py, así que aquí es donde se hará 
     *  **dibujar_grafica_barras(X, Y, titulo, etiqueta_eje_x, etiqueta_eje_y)**: Función definida en el [módulo `graficas`](#módulo-graficas).
     
 ### Módulo poverty_test
+En el módulo de pruebas se han definido las siguientes funciones de pruebas, cada una de las cuales se usa para probar la función con que tiene el mismo nombre (pero sin comenzar por `test\_` del módulo `poverty`. Por ejemplo, la función `test_lee_fichero` prueba la función `lee_fichero`.
 
-* **<test funcion 1>**: Descripción de las pruebas realizadas a la función 1.
-* **<test funcion 2>**: Descripción de las pruebas realizadas a la función 2.
-* ...
-* 
+* **test_lee_fichero(fichero)**
+* **test_selecciona_registros_de_genero_y_pais(registros,  genero='Hombre', pais='A')**
+* **test_obten_registros_mas_dinero_banco(registros)**:
+* **test_cuenta_endeudados (registros, genero='Hombre')**
+* **test_obten_n_registros_menor_num_moviles(registros, genero='Hombre', n=3)**
+* **test_calcula_porcentaje_endeudados(registros, genero='Hombre')**
+* **test_obten_media_edad_por_nivel_educacion (registros)**
+* **test_calcula_total_veces_endeudados_por_situacion_familiar(registros, edad)**
+* **test_muestra_dinero_banco_por_nivel_educacion(registros)**
+
+En este módulo también se definido dos funciones auxiliares:
+* **mostrar_registros (registros)**
+* **mostrar_diccionario(dicc)**
 
 ### Módulo parsers
 
