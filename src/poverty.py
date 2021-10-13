@@ -155,9 +155,9 @@ def obten_n_registros_menor_num_moviles(registros,genero='Hombre',n=3):
     return res[:n]
 
 
-def calcula_total_veces_endeudados_por_situacion_familiar(lista,edad):
+def calcula_total_veces_endeudados_por_situacion_familiar(registros,edad):
     '''
-    @param registros:  lista de tuplas con los datos de pobreza
+    @param registros:  registros de tuplas con los datos de pobreza
     @type registros: [ Info(int, str, boolean, int, str. boolean, str, str, in, boolean, int, boolean, int, int, datetime.date)]
     @param edad: Edad para la que se va a calcular el total de veces endeudados.
     @type edad: int 
@@ -166,7 +166,7 @@ def calcula_total_veces_endeudados_por_situacion_familiar(lista,edad):
     @rtype: {str: int}
     '''
     dicc={}
-    for p in lista:
+    for p in registros:
         if p.edad ==edad:
             if p.situacion_familiar in dicc:
                 dicc[p.situacion_familiar]+=p.veces_endeudado
